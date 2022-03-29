@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Laern Vue</title>
+<script src = "https://unpkg.com/vue@next"></script>
+
+
+</head>
+<body>
+    <h1 id="site-heading">Wellcome to {{ siteName}}</h1>
+    <script>
+        const app = Vue.createApp({
+            data(){
+                return{
+                    siteName: 'Learn Vue Lessons'
+                };
+            }
+        }).mount('#site-heading');
+
+    </script>
+
+</body>
+
+
+</html>
